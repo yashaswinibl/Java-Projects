@@ -1,0 +1,33 @@
+// java program for a car color selector
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Do you want a car");
+        Scanner sc=new Scanner(System.in);
+        String ans1=sc.next();
+        
+        if(ans1.equals("Yes")){
+            System.out.println("what is your fav colour among red,green,blue");
+            String ans2=sc.next();
+            if(ans2.equals("red")){
+                System.out.println("Greate we have it in a stock would you like to see it or not");
+                 String ans3=sc.next();
+                 if(ans3.equals("Yes")){
+                System.out.println("lets check the car");
+                 }
+                else{
+                System.out.println("Its fine lets look for something else");
+              }
+        }
+        else if(ans2.equals("blue")){
+            System.out.println("Sure We can order it");
+        }
+        else{
+            System.out.println("we dont have it in a stock");
+        }
+        }
+        else{
+            System.out.println("No worries have a good day");
+        }
+    }
+}
